@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="edit_text_hint_text">Enter your name!</string>
+    <string name="q1">1.) Which of these correctly connects a text view to Java code</string>
+    <string name="q1_option1">TextView myTextView = (TextView) findViewById(R.id.myTextView)</string>
+    <string name="q1_option2">TextView = new TextView(contect)</string>
+    <string name="q1_option3">TextView myTextView = (TextView) findById(R.id.myTextView)</string>
+    <string name="q2">2.) Which of these files is used to customize the style of an app.</string>
+    <string name="q2_option1">colors.xml</string>
+    <string name="q2_option2">styles.xml</string>
+    <string name="q2_option3">style.xml</string>
+    <string name="q3">3.) Correct the following code and enter the right syntax in the text box below</string>
+    <string name="q3_option">TextView = new TextView(context);</string>
+    <string name="q4_option1">TextView</string>
+    <string name="q4_option2">TextClassView</string>
+    <string name="q4_option3">CheckBox</string>
+    <string name="q4_option4">ScrollView</string>
+    <string name="q5">5. ) Which of the statements is correct?</string>
+    <string name="q5_option1">Android is not an operationg system for mobile phones.</string>
+    <string name="q5_option2">Designs in android are only done using \'xml\' files.</string>
+    <string name="q5_option3">Android is based off Java programming language.</string>
+</resources>
