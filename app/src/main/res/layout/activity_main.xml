@@ -15,19 +15,17 @@
             android:id="@+id/nameText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textCapWords"
             android:layout_marginBottom="16dp"
             android:hint="@string/edit_text_hint_text"
-            />
+            android:inputType="textCapWords" />
 
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/q1"
-            android:textSize="18sp"
             android:layout_marginTop="16dp"
-            />
+            android:text="@string/q1"
+            android:textSize="18sp" />
 
         <RadioGroup
             android:id="@+id/radio_q1"
@@ -40,39 +38,39 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginRight="24dp"
+                android:layout_marginTop="5dp"
                 android:checked="false"
                 android:paddingLeft="10dp"
                 android:text="@string/q1_option1"
-                android:textSize="15sp"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="10dp"/>
+                android:textSize="15sp" />
 
             <RadioButton
                 android:id="@+id/q1_option2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginRight="24dp"
+                android:layout_marginTop="5dp"
                 android:checked="false"
                 android:paddingLeft="10dp"
                 android:text="@string/q1_option2"
-                android:textSize="15sp"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="10dp"/>
+                android:textSize="15sp" />
 
             <RadioButton
                 android:id="@+id/q1_option3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginRight="24dp"
+                android:layout_marginTop="5dp"
                 android:checked="false"
                 android:paddingLeft="10dp"
                 android:text="@string/q1_option3"
-                android:textSize="15sp"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="10dp"/>
+                android:textSize="15sp" />
 
         </RadioGroup>
 
@@ -80,10 +78,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/q2"
-            android:textSize="18sp"
             android:layout_marginTop="16dp"
-            />
+            android:text="@string/q2"
+            android:textSize="18sp" />
 
         <RadioGroup
             android:id="@+id/radio_q2"
@@ -96,39 +93,39 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginRight="24dp"
+                android:layout_marginTop="5dp"
                 android:checked="false"
                 android:paddingLeft="10dp"
                 android:text="@string/q2_option1"
-                android:textSize="16sp"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="10dp"/>
+                android:textSize="16sp" />
 
             <RadioButton
                 android:id="@+id/q2_option2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginRight="24dp"
+                android:layout_marginTop="5dp"
                 android:checked="false"
                 android:paddingLeft="10dp"
                 android:text="@string/q2_option2"
-                android:textSize="16sp"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="10dp"/>
+                android:textSize="16sp" />
 
             <RadioButton
                 android:id="@+id/q2_option3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginRight="24dp"
+                android:layout_marginTop="5dp"
                 android:checked="false"
                 android:paddingLeft="10dp"
                 android:text="@string/q2_option3"
-                android:textSize="16sp"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="10dp"/>
+                android:textSize="16sp" />
 
 
         </RadioGroup>
@@ -137,37 +134,37 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:text="@string/q3"
-            android:textSize="18sp"
-            android:layout_marginTop="16dp"/>
+            android:textSize="18sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/q3_option"
-            android:paddingLeft="15dp"
             android:layout_marginTop="10dp"
-            android:textSize="18sp"/>
+            android:paddingLeft="15dp"
+            android:text="@string/q3_option"
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/q3_answer"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginBottom="16dp"
-            android:background="@drawable/edit_text"
-            android:layout_marginTop="10dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
             android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"/>
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="4.) Which of these is a valid view class in android?"
-            android:textSize="18dp"
+            android:layout_marginBottom="10dp"
             android:layout_marginTop="16dp"
-            android:layout_marginBottom="10dp"/>
+            android:text="@string/q4"
+            android:textSize="18sp" />
 
 
         <LinearLayout
@@ -184,16 +181,16 @@
                     android:id="@+id/q4_option1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/q4_option1"
-                    android:layout_marginLeft="10dp"/>
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/q4_option1" />
 
 
                 <CheckBox
                     android:id="@+id/q4_option2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/q4_option2"
-                    android:layout_marginLeft="10dp"/>
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/q4_option2" />
 
             </LinearLayout>
 
@@ -206,32 +203,29 @@
                     android:id="@+id/q4_option3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/q4_option3"
-                    android:layout_marginLeft="10dp"/>
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/q4_option3" />
 
 
                 <CheckBox
                     android:id="@+id/q4_option4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/q4_option4"
-                    android:layout_marginLeft="10dp"/>
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/q4_option4" />
 
             </LinearLayout>
-
 
 
         </LinearLayout>
 
 
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/q5"
-            android:textSize="18sp"
             android:layout_marginTop="16dp"
-            />
+            android:text="@string/q5"
+            android:textSize="18sp" />
 
         <RadioGroup
             android:id="@+id/radio_q5"
@@ -244,52 +238,56 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginRight="24dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
                 android:checked="false"
                 android:paddingLeft="10dp"
                 android:text="@string/q5_option1"
-                android:textSize="16sp"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="10dp"/>
+                android:textSize="16sp" />
 
             <RadioButton
                 android:id="@+id/q5_option2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginRight="24dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
                 android:checked="false"
                 android:paddingLeft="10dp"
                 android:text="@string/q5_option2"
-                android:textSize="16sp"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="10dp"/>
+                android:textSize="16sp" />
 
             <RadioButton
                 android:id="@+id/q5_option3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginRight="24dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
                 android:checked="false"
                 android:paddingLeft="10dp"
                 android:text="@string/q5_option3"
-                android:textSize="16sp"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="10dp"/>
+                android:textSize="16sp" />
 
 
         </RadioGroup>
 
-
-
-
-
-
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="Submit Quiz"/>
 
 
     </LinearLayout>
-
 
 
 </ScrollView>

@@ -15,8 +15,9 @@
     <string name="q4_option2">TextClassView</string>
     <string name="q4_option3">CheckBox</string>
     <string name="q4_option4">ScrollView</string>
-    <string name="q5">5. ) Which of the statements is correct?</string>
+    <string name="q5">5.) Which of the statements is correct?</string>
     <string name="q5_option1">Android is not an operationg system for mobile phones.</string>
     <string name="q5_option2">Designs in android are only done using \'xml\' files.</string>
     <string name="q5_option3">Android is based off Java programming language.</string>
+    <string name="q4">4.) Which of these is a valid view class in android?</string>
 </resources>
