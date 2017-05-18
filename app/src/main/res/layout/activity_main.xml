@@ -284,7 +284,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="16dp"
-            android:text="Submit Quiz"/>
+            android:text="@string/submitBtnText"
+            android:background="@drawable/button_style"
+            android:padding="12dp"/>
 
 
     </LinearLayout>

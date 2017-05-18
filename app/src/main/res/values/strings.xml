@@ -20,4 +20,5 @@
     <string name="q5_option2">Designs in android are only done using \'xml\' files.</string>
     <string name="q5_option3">Android is based off Java programming language.</string>
     <string name="q4">4.) Which of these is a valid view class in android?</string>
+    <string name="submitBtnText">Submit Quiz</string>
 </resources>
