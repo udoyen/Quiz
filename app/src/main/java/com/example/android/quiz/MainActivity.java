@@ -13,9 +13,9 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    int score = 0;
+    int score = 0; // Use this variable to monitor the overall score
 
-    boolean name = false;
+    boolean name = false; // Use this to check if user has entered their name
 
 
     @Override
@@ -39,8 +39,10 @@ public class MainActivity extends AppCompatActivity {
             }
 
             @Override
-            public void afterTextChanged(Editable s) {
+            public void afterTextChanged(Editable s) { // make sure the user has entered a name
 
+                // returns true if user has enter name or
+                // some text in the name edit text view
                 name = s.length() > 0;
 
             }
@@ -51,7 +53,8 @@ public class MainActivity extends AppCompatActivity {
         final String rightAnswer = getString(R.string.rightAnswer);
 
         /**
-         *
+         * use this to check what the user has entered into
+         * the third question edit text view
          */
         q3_TextBox.addTextChangedListener(new TextWatcher() {
 
@@ -68,11 +71,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void afterTextChanged(Editable s) {
 
+                // Change the "type" of the value of edit text view
+                // to "String" so we compare it to the "rightAnswer"
                 String userAnswer = String.valueOf(s);
 
-                if (s.length() > 0) {
+                if (s.length() > 0) { //has the user enter a value, if yes go into the if loop
 
-                    if (userAnswer.equals(rightAnswer)) {
+                    if (userAnswer.equals(rightAnswer)) { // Is it the right answer, if so enter ans add 20 points
 
                         score = score + 20;
 
@@ -93,12 +98,13 @@ public class MainActivity extends AppCompatActivity {
 
         //Get the ids of all the right checkbox
         //correct answers
-
         final CheckBox scrollViewCheckbox = (CheckBox) findViewById(R.id.q4_option4);
         final CheckBox checkboxViewCheckbox = (CheckBox) findViewById(R.id.q4_option3);
-
         final CheckBox textViewCheckbox = (CheckBox) findViewById(R.id.q4_option1);
 
+        // Use if statement to maek sure
+        // all are checked before adding 20 points to the
+        // score variable
         textViewCheckbox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -123,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
         // Is the button now checked
         boolean checked = ((RadioButton) view).isChecked();
 
-        // CHeck which radio button is clicked
+        // Check which radio button is clicked
         switch (view.getId()) {
             case R.id.q1_option1:
                 if (checked)
@@ -139,13 +145,18 @@ public class MainActivity extends AppCompatActivity {
      */
     public void q2_OnRadioButtonClicked(View view) {
 
+        // create a group variable using group id
         RadioGroup q2Button = (RadioGroup) findViewById(R.id.radio_q2);
 
-        //Is the button now clicked
+        //Is the button now clicked, then which member of the group
+        // was clicked
         int checked = q2Button.getCheckedRadioButtonId();
 
+        // Use the group is to identify if the clicked radio button
+        // was for the correct answer
         RadioButton checkedRadioButton = (RadioButton) findViewById(checked);
 
+        // if the right was selected add 20 points to the score variable
         if (checkedRadioButton.isChecked()) {
             score = score + 20;
         }
@@ -170,15 +181,22 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     *
+     * @param view
+     */
     public void subtmitButtonClicked(View view) {
 
         EditText username = (EditText)findViewById(R.id.nameText);
+
+        // get the value of the user's name and "cast" to primitive type "String"
         String theUser = (username.getText()).toString();
-        if(name){
+
+        if(name){ // if user entered a name print name and score of user
 
             Toast.makeText(MainActivity.this, theUser + " Your total score was " + score, Toast.LENGTH_LONG).show();
 
-        }else {
+        }else { // If no user name was entered then notify user and wait for their respond
 
             Toast.makeText(MainActivity.this, "Please kindly enter a name at the top of the app", Toast.LENGTH_LONG).show();
 
