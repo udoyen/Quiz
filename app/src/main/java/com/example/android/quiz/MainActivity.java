@@ -101,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
         final CheckBox scrollViewCheckbox = (CheckBox) findViewById(R.id.q4_option4);
         final CheckBox checkboxViewCheckbox = (CheckBox) findViewById(R.id.q4_option3);
         final CheckBox textViewCheckbox = (CheckBox) findViewById(R.id.q4_option1);
+        final CheckBox textClassViewCheckbox = (CheckBox) findViewById(R.id.q4_option2);
 
         // Use if statement to maek sure
         // all are checked before adding 20 points to the
@@ -109,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                if (textViewCheckbox.isChecked()) {
+                if (textViewCheckbox.isChecked() && !(textClassViewCheckbox.isChecked())) {
                     if (scrollViewCheckbox.isChecked()) {
                         if (checkboxViewCheckbox.isChecked()) {
                             score = score + 20;

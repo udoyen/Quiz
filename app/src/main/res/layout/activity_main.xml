@@ -17,7 +17,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:hint="@string/edit_text_hint_text"
-            android:inputType="textCapWords" />
+            android:inputType="textCapWords"
+            />
 
 
         <TextView
