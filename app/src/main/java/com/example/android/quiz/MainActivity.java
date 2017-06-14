@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
 
     boolean name = false; // Use this to check if user has entered their name
 
+    EditText username = (EditText)findViewById(R.id.nameText);
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -188,7 +190,6 @@ public class MainActivity extends AppCompatActivity {
      */
     public void subtmitButtonClicked(View view) {
 
-        EditText username = (EditText)findViewById(R.id.nameText);
 
         // get the value of the user's name and "cast" to primitive type "String"
         String theUser = (username.getText()).toString();
