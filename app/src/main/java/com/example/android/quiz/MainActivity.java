@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     boolean name = false; // Use this to check if user has entered their name
 
-    EditText username = (EditText)findViewById(R.id.nameText);
+
 
 
     @Override
@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void q1_OnRadioButtonClicked(View view) {
 
-        boolean checker;
+        boolean checker = false;
 
         // Is the button now checked
         boolean checked = ((RadioButton) view).isChecked();
@@ -139,11 +139,17 @@ public class MainActivity extends AppCompatActivity {
             case R.id.q1_option1:
                 if (checked)
                     score = score + 20;
-                    checker = true;
+                    //checker = true;
                 break;
             case R.id.q1_option2:
             case R.id.q1_option3:
-                score -= 20;
+                if(checked){
+                    if(score > 0){
+                        score -= 20;
+                    }
+
+                }
+
             default:
                 break;
         }
@@ -176,6 +182,8 @@ public class MainActivity extends AppCompatActivity {
      */
     public void q5_OnRadioButtonClicked(View view) {
 
+        boolean checker = false;
+
         // Is the button now checked
         boolean checked = ((RadioButton) view).isChecked();
 
@@ -184,7 +192,15 @@ public class MainActivity extends AppCompatActivity {
             case R.id.q5_option3:
                 if (checked)
                     score = score + 20;
+                    //checker = true;
                 break;
+            case R.id.q1_option2:
+            case R.id.q1_option3:
+                if(checked){
+
+                    score = score - 20;
+
+                }
             default:
                 break;
         }
@@ -196,6 +212,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void subtmitButtonClicked(View view) {
 
+        EditText username = (EditText)findViewById(R.id.nameText);
 
         // get the value of the user's name and "cast" to primitive type "String"
         String theUser = (username.getText()).toString();
