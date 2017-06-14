@@ -30,28 +30,28 @@ public class MainActivity extends AppCompatActivity {
 
         //checkCheckBoxAnswer();
 
-        EditText userName = (EditText) findViewById(R.id.nameText);
-
-        userName.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) { // make sure the user has entered a name
-
-                // returns true if user has enter name or
-                // some text in the name edit text view
-                name = s.length() > 0;
-
-            }
-        });
+//        EditText userName = (EditText) findViewById(R.id.nameText);
+//
+//        userName.addTextChangedListener(new TextWatcher() {
+//            @Override
+//            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+//
+//            }
+//
+//            @Override
+//            public void onTextChanged(CharSequence s, int start, int before, int count) {
+//
+//            }
+//
+//            @Override
+//            public void afterTextChanged(Editable s) { // make sure the user has entered a name
+//
+//                // returns true if user has enter name or
+//                // some text in the name edit text view
+//                name = s.length() > 0;
+//
+//            }
+//        });
 
 
         EditText q3_TextBox = (EditText) findViewById(R.id.q3_answer);
@@ -214,18 +214,19 @@ public class MainActivity extends AppCompatActivity {
 
         EditText username = (EditText) findViewById(R.id.nameText);
 
+        String theUser;
+
         // get the value of the user's name and "cast" to primitive type "String"
-        String theUser = (username.getText()).toString();
+        if (username.length() > 0) {
 
-        //if(name){ // if user entered a name print name and score of user
+            theUser = (username.getText()).toString();
+            Toast.makeText(MainActivity.this, theUser + " Your total score was " + score, Toast.LENGTH_LONG).show();
 
-        Toast.makeText(MainActivity.this, theUser + " Your total score was " + score, Toast.LENGTH_LONG).show();
+        } else { // If no user name was entered then notify user and wait for their respond
 
-        //}else { // If no user name was entered then notify user and wait for their respond
+            Toast.makeText(MainActivity.this, "Please kindly enter a name at the top of the app", Toast.LENGTH_LONG).show();
 
-        //Toast.makeText(MainActivity.this, "Please kindly enter a name at the top of the app", Toast.LENGTH_LONG).show();
-
-        // }
+        }
 
 
     }
