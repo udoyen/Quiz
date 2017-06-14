@@ -129,6 +129,8 @@ public class MainActivity extends AppCompatActivity {
      */
     public void q1_OnRadioButtonClicked(View view) {
 
+        boolean checker;
+
         // Is the button now checked
         boolean checked = ((RadioButton) view).isChecked();
 
@@ -137,7 +139,11 @@ public class MainActivity extends AppCompatActivity {
             case R.id.q1_option1:
                 if (checked)
                     score = score + 20;
+                    checker = true;
                 break;
+            case R.id.q1_option2:
+            case R.id.q1_option3:
+                score -= 20;
             default:
                 break;
         }
@@ -194,15 +200,15 @@ public class MainActivity extends AppCompatActivity {
         // get the value of the user's name and "cast" to primitive type "String"
         String theUser = (username.getText()).toString();
 
-        if(name){ // if user entered a name print name and score of user
+        //if(name){ // if user entered a name print name and score of user
 
             Toast.makeText(MainActivity.this, theUser + " Your total score was " + score, Toast.LENGTH_LONG).show();
 
-        }else { // If no user name was entered then notify user and wait for their respond
+        //}else { // If no user name was entered then notify user and wait for their respond
 
-            Toast.makeText(MainActivity.this, "Please kindly enter a name at the top of the app", Toast.LENGTH_LONG).show();
+            //Toast.makeText(MainActivity.this, "Please kindly enter a name at the top of the app", Toast.LENGTH_LONG).show();
 
-        }
+       // }
 
 
     }
