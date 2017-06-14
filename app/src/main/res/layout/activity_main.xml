@@ -163,7 +163,8 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/edit_text"
             android:paddingLeft="10dp"
-            android:paddingRight="10dp" />
+            android:paddingRight="10dp"
+            />
 
         <TextView
             android:layout_width="match_parent"
@@ -189,7 +190,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="@string/q4_option1" />
+                    android:onClick="checkBoxClicked"
+                    android:text="@string/q4_option1"/>
 
 
                 <CheckBox
@@ -197,7 +199,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="@string/q4_option2" />
+                    android:onClick="checkBoxClicked"
+                    android:text="@string/q4_option2"/>
 
             </LinearLayout>
 
@@ -211,7 +214,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="@string/q4_option3" />
+                    android:onClick="checkBoxClicked"
+                    android:text="@string/q4_option3"/>
 
 
                 <CheckBox
@@ -219,7 +223,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="@string/q4_option4" />
+                    android:onClick="checkBoxClicked"
+                    android:text="@string/q4_option4"/>
 
             </LinearLayout>
 
@@ -295,9 +300,9 @@
             android:layout_gravity="center"
             android:layout_marginTop="16dp"
             android:background="@drawable/button_style"
+            android:onClick="subtmitButtonClicked"
             android:padding="12dp"
-            android:text="@string/submitBtnText"
-            android:onClick="subtmitButtonClicked"/>
+            android:text="@string/submitBtnText"/>
 
 
     </LinearLayout>
